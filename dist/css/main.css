@@ -1,0 +1,153 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* UTILITIES */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .hide-for-mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 481px) {
+  .hide-for-desktop {
+    display: none !important;
+  }
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+/* Navbar */
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+.menu-link:not(:last-child) {
+  margin-right: 1.5rem;
+}
+.menu-link a {
+  color: #000;
+}
+
+/* burger button for mobile view */
+.burger-btn {
+  display: flex;
+  flex-direction: column;
+}
+.burger-line {
+  display: inline-block;
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+}
+.burger-line:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+/* Jumbotron */
+/* nanti ganti pake carousel */
+#jumbotron {
+  flex-grow: 1;
+  background-image: url(../assets/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MAIN */
+main > article {
+  padding: 4rem 1rem;
+}
+.section-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.375rem;
+}
+
+/* Values */
+#values {
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(260px, 1fr));
+  grid-row-gap: 1.5rem;
+}
+
+.value-item {
+  padding: 1rem;
+  color: #fff;
+}
+#innovative {
+  background-color: #d9534f;
+}
+#loyalty {
+  background-color: #5cb85c;
+}
+#respect {
+  background-color: #0275d8;
+}
+.value-item-icon {
+  width: 10%;
+  height: 10%;
+  margin: 0 auto;
+}
+.value-item-icon img {
+  width: 100%;
+  height: auto;
+}
+.value-item-title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.125rem;
+}
+.value-item-text {
+  text-align: center;
+}
+
+/* Contact */
+#contact {
+}
