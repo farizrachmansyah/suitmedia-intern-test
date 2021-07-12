@@ -47,6 +47,7 @@ header {
 
 /* Navbar */
 #navbar {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -111,8 +112,32 @@ header {
   padding: 0.9125rem;
 }
 
+/* overlay menu for mobile */
+#mobile-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  padding: 66px 16px;
+  background-color: var(--secondary-color);
+}
+#mobile-navbar-menu li {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+#mobile-navbar-menu li:nth-child(2),
+#mobile-navbar-menu li:nth-child(3) {
+  margin-left: 3rem;
+}
+#mobile-navbar-menu li a {
+  color: var(--primary-color);
+}
 /* burger button for mobile view */
 .burger-btn {
+  position: absolute;
+  right: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -224,9 +249,11 @@ main > article {
 #contact {
 }
 
-#contact section {
-  max-width: 50%;
-  margin: 0 auto;
+@media screen and (min-width: 640px) {
+  #contact section {
+    max-width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .section-content {
