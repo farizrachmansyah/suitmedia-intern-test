@@ -26,7 +26,7 @@
         </ul>
 
         <!-- Mobile navbar menu -->
-        <div id="mobile-overlay">
+        <div id="mobile-overlay" class="hide-for-desktop">
           <ul id="mobile-navbar-menu">
             <li><a href="">about</a></li>
             <li><a href="">history</a></li>
@@ -45,7 +45,19 @@
       </nav>
 
       <!-- Jumbotron -->
-      <section id="jumbotron"></section>
+      <section id="jumbotron">
+        <ul id="lightSlider">
+          <li>
+            <h3>First Slide</h3>
+            <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+          </li>
+          <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+          </li>
+          ...
+        </ul>
+      </section>
     </header>
 
     <main>
@@ -93,24 +105,41 @@
         <section>
           <h1 class="section-title">contact us</h1>
           <div class="section-content">
-            <form action="" method="">
+            <form novalidate action="" method="" id="contact-form">
               <div class="form-item">
                 <label for="name">name</label>
-                <input type="text" name="name" id="name" required />
-                <span class="field-warning">asdasd</span>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  class="contact-input-field"
+                />
+                <span id="name-warning" class="field-warning">asdasd</span>
               </div>
               <div class="form-item">
                 <label for="email">email</label>
-                <input type="email" name="email" id="email" required />
-                <span class="field-warning">wefwf</span>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  class="contact-input-field"
+                />
+                <span id="email-warning" class="field-warning">wefwf</span>
               </div>
               <div class="form-item">
                 <label for="message">message</label>
-                <textarea name="message" id="message" required></textarea>
-                <span class="field-warning">fweggwe</span>
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  class="contact-input-field"
+                ></textarea>
+                <span id="msg-warning" class="field-warning">fweggwe</span>
               </div>
               <div class="form-item">
-                <button type="submit">submit</button>
+                <button type="submit" id="contact-submit">submit</button>
               </div>
             </form>
           </div>
@@ -129,5 +158,7 @@
         /></a>
       </div>
     </footer>
+
+    <script src="./dist/js/main.js"></script>
   </body>
 </html>

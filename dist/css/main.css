@@ -121,6 +121,7 @@ header {
   height: 100vh;
   padding: 66px 16px;
   background-color: var(--secondary-color);
+  transition: all 0.3s ease;
 }
 #mobile-navbar-menu li {
   border-bottom: 1px solid #ccc;
@@ -146,6 +147,7 @@ header {
   width: 22px;
   height: 2px;
   background-color: var(--primary-color);
+  transition: all 0.3s ease;
 }
 .burger-line:not(:last-child) {
   margin-bottom: 4px;
@@ -153,13 +155,6 @@ header {
 
 /* Jumbotron */
 /* nanti ganti pake carousel */
-#jumbotron {
-  flex-grow: 1;
-  background-image: url(../assets/bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* MAIN */
 main > article {
@@ -301,8 +296,14 @@ form {
 
 .field-warning {
   visibility: hidden;
+  margin-top: 0.25rem;
   font-size: 0.75rem;
   color: #d9534f;
+}
+@media screen and (min-width: 700px) {
+  .field-warning {
+    font-size: 0.825rem;
+  }
 }
 
 /* FOOTER */
