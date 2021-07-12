@@ -62,10 +62,6 @@ class UI {
     });
   }
 
-  imageCarousel() {
-    
-  }
-
   formValidation() {
     const contactInputField = document.querySelectorAll('.contact-input-field');
     const nameWarning = document.querySelector('#name-warning');
@@ -130,9 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const ui = new UI();
 
   ui.burgerMenu();
-  ui.imageCarousel();
   ui.formValidation();
-
 });
 
 // SLIDER LOGIC
