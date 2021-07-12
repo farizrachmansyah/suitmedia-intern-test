@@ -46,17 +46,29 @@
 
       <!-- Jumbotron -->
       <section id="jumbotron">
-        <ul id="lightSlider">
-          <li>
-            <h3>First Slide</h3>
-            <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
-          </li>
-          <li>
-            <h3>Second Slide</h3>
-            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
-          </li>
-          ...
-        </ul>
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <div class="text">
+              this is a place where technology and creativity fused into digital
+              chemistry
+            </div>
+          </div>
+          <div class="mySlides">
+            <div class="text">
+              we don't have the best but we have the greatest team
+            </div>
+          </div>
+
+          <!-- Next previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- slider indicator -->
+          <div class="slideshow-dot" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+        </div>
       </section>
     </header>
 
